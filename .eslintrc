@@ -2,5 +2,9 @@
   "extends": ["node"],
   "env": {
     "node": true
+  },
+  "rules": {
+    "import/no-nodejs-modules": 0,
+    "no-sync": 0
   }
 }
