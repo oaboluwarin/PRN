@@ -1,10 +1,11 @@
 {
-  "name": "PRN",
+  "name": "prn",
   "version": "1.0.0",
   "description": "CRUD API built with Postgres, Express, Node",
   "main": "index.js",
   "scripts": {
     "precommit": "eslint .",
+    "start": "babel-watch server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,10 @@
     "save-dev": "^2.0.0"
   },
   "devDependencies": {
-    "eslint-config-node": "^3.0.0"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "eslint-config-node": "^3.0.0",
+    "morgan": "^1.9.0"
   }
 }
