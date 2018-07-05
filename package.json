@@ -4,6 +4,7 @@
   "description": "CRUD API built with Postgres, Express, Node",
   "main": "index.js",
   "scripts": {
+    "precommit": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/oaboluwarin/PRN/issues"
   },
-  "homepage": "https://github.com/oaboluwarin/PRN#readme"
+  "homepage": "https://github.com/oaboluwarin/PRN#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "husky": "^0.14.3",
+    "save-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-node": "^3.0.0"
+  }
 }
