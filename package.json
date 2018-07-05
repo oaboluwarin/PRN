@@ -6,6 +6,8 @@
   "scripts": {
     "precommit": "eslint .",
     "start": "babel-watch server.js",
+    "migrate": "sequelize db:migrate",
+    "undo:migrations": "sequelize db:migrate:undo:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +22,13 @@
   },
   "homepage": "https://github.com/oaboluwarin/PRN#readme",
   "dependencies": {
+    "bcrypt": "^2.0.1",
     "express": "^4.16.3",
     "husky": "^0.14.3",
-    "save-dev": "^2.0.0"
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "save-dev": "^2.0.0",
+    "sequelize": "^4.38.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
